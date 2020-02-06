@@ -11,8 +11,8 @@ footer {
   margin-top: -20px;
   margin-bottom: 20px;
   width: 100%;
-  height: 300px;
-  background: url("/images/cover-bg.jpg") center center no-repeat;
+  height: 450px;
+  background: url("/images/cover.jpg") center center no-repeat;
   background-size: cover;
 }
 .cover .cover-inner {
@@ -37,6 +37,12 @@ footer {
   background: #f2f2f2;
 }
 
+
+
+.panel-footer {
+  margin-top: 10px;
+}
+
 .media-object {
     display: inline-block;
 }
@@ -48,6 +54,7 @@ footer {
 h1 {
   position: relative;
   padding: 1em 0;
+  font-weight: bolder;
 }
 h1::before,
 h1::after {
@@ -69,7 +76,56 @@ h1::after {
   border-bottom: 2px solid #ccc;
 }
 
+
 .img {
-  display: inline-block;
-  margin: 0 8px;
+  height: 170px;
+  width: 170px;
+  display: block;
+  text-align: center;
+  background: black;
+  margin: auto;
+}
+
+.tweet {
+    border: 3px solid #ccc;
+    margin: 5px;
+}
+
+.post-title {
+  font-size: 16px;
+}
+
+.pos {
+  border: 3px solid #cccccc;
+  padding: 5px;
+}
+
+.container {
+    width: 80%;
+}
+
+.panel-footer-show {
+  margin: 0px;
+}
+
+.center {
+  text-align: center;
+  color: #24bde0;
+}
+
+.concept {
+  text-align: center;
+}
+
+.secondary {
+  font-size: 18px
+}
+
+.inner-content {
+ color: #fff;
+}
+
+.back-page {
+ text-align: center;
+ color: white
 }

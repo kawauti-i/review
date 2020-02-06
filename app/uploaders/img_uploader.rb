@@ -53,7 +53,7 @@ class ImgUploader < CarrierWave::Uploader::Base
   #else
     #storage :file
   #end
-  process resize_to_fit: [150, 150]
+ process resize_to_fit: [170, 170]
   
   def default_url
     "default.jpg"

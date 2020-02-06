@@ -2,18 +2,37 @@
   <div class="cover">
       <div class="cover-inner">
         <div class="cover-contents">
-          <h1>素敵なモノと出会う場所</h1>
-          <a href="" class="btn btn-success btn-lg">モノリストを始める</a>
+          <div class="inner-content"><p>みんなに映画をおすすめしたいあなた、観たい映画を探しているあなたに</p></div>
+          <h1>素敵な映画と出会う場所</h1>
+          <% unless logged_in? %>
+            <%= link_to 'REVIEWを始める', signup_path, class: 'btn btn-success btn-lg' %>
+          <% end %>
         </div>
       </div>
   </div>
 <% end %>
+
+<div class="container-fluid center">
+  <div class="col-md-6">
+    <h4 class="center">
+      <img src="/images/pen.png" alt="info" width="50" heigth="50">
+      <%= link_to '評価', new_post_path %>
+    </h4>
+    
+    <p>あなたのみた映画をコメントで評価しよう！</p>
+  </div>
+  <div class="col-md-6">
+    <h4 class="center">
+      <img src="/images/search.png" alt="info" width="50" heigth="50">
+      <%= link_to '検索', new_post_path %>
+    </h4>
+    <p>あなたの気になる映画を検索しよう！</p>
+  </div>
+</div>
 <div class="main">
-  <div class="col-md-8 col-sm-8 col-xs-12">
-    <h1>新着レビュー</h1>
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <h1 class="center">REVIEW</h1>
     <%= render 'posts/posts', posts: @posts %>
   </div>
 </div>
-<div>
-  <%= render 'layouts/sidebar' %>
-</div>
+
