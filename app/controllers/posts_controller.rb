@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :require_user_logged_in
+  before_action :require_user_logged_in, only: [:new, :create, :destroy]
   before_action :correct_user, only: [:destroy]
   
   def new
@@ -26,6 +26,11 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+  end
+  
+  def index
+    @search = Post.search(params[:q])
+    @posts = @search.result.page(params[:page])
   end
   
   private

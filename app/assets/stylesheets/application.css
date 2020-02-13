@@ -129,3 +129,12 @@ h1::after {
  text-align: center;
  color: white
 }
+
+
+
+.search {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
