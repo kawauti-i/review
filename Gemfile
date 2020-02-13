@@ -59,3 +59,11 @@ gem 'carrierwave', '~> 1.3', '>= 1.3.1'
 gem 'mini_magick'
 
 gem 'ransack'
+
+gem "fog-aws"
+
+gem 'dotenv-rails'
+
+group :production do
+  gem 'pg', '0.21.0'
+end
